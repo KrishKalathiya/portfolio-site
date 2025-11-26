@@ -318,9 +318,8 @@ nav {
 
 .logo a {
   color: var(--green);
-  width: 42px;
-  height: 42px;
-  display: block;
+  display: flex;
+  align-items: center;
   transition: var(--transition);
 }
 
