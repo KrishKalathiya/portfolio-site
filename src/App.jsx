@@ -6,25 +6,28 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 import ProjectsPage from './pages/ProjectsPage';
 import ProfessionalDevelopment from './pages/ProfessionalDevelopment';
+import { ThemeProvider } from './context/ThemeContext';
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navigation />
-      <SocialSidebar />
-      <div id="content">
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/professional-development" element={<ProfessionalDevelopment />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Navigation />
+        <SocialSidebar />
+        <div id="content">
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/professional-development" element={<ProfessionalDevelopment />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
