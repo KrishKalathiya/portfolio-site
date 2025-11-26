@@ -36,7 +36,7 @@
   --nav-height: 100px;
   --nav-scroll-height: 70px;
   --tab-height: 42px;
-  --tab-width: 120px;
+  --tab-width: 160px;
 
   /* Spacing - Fluid (scales with viewport) */
   --spacing-unit: clamp(1rem, 2vw, 1.5rem);
@@ -632,21 +632,22 @@ section {
   padding: 0;
   margin: 0;
   list-style: none;
+  gap: 10px;
 }
 
 .job-tab {
   display: flex;
   align-items: center;
   width: 100%;
-  height: var(--tab-height);
-  padding: 0 20px 2px;
+  min-height: var(--tab-height);
+  padding: 10px 15px;
   border-left: 2px solid var(--lightest-navy);
   background-color: transparent;
   color: var(--slate);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   text-align: left;
-  white-space: nowrap;
+  white-space: normal;
   cursor: pointer;
   transition: var(--transition);
 }

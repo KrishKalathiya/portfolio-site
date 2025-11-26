@@ -73,9 +73,9 @@ function Navigation() {
           </div>
           <div className="nav-links">
             <ol>
-              <li><Link to="/#about">About</Link></li>
-              <li><Link to="/work">Work</Link></li>
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/projects">Projects</Link></li>
+              <li><Link to="/work">Work</Link></li>
               <li><Link to="/professional-development">Development</Link></li>
               <li><Link to="/#contact">Contact</Link></li>
             </ol>
@@ -97,8 +97,8 @@ function Navigation() {
         <nav>
           <ol>
             <li><Link to="/#about" onClick={closeMenu}>About</Link></li>
-            <li><Link to="/work" onClick={closeMenu}>Work</Link></li>
             <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
+            <li><Link to="/work" onClick={closeMenu}>Work</Link></li>
             <li><Link to="/professional-development" onClick={closeMenu}>Development</Link></li>
             <li><Link to="/#contact" onClick={closeMenu}>Contact</Link></li>
           </ol>

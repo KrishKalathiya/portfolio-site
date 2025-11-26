@@ -12,18 +12,18 @@ function Home() {
       
       <About />
 
-      {/* Work Preview - Top 2 */}
-      <section id="work" className="experience-section">
-        <h2 className="numbered-heading">Where I've Worked</h2>
-        <Experience limit={2} />
-        <Link to="/work" className="view-all-link">View Full Work History</Link>
-      </section>
-
       {/* Projects Preview - Top 2 */}
       <section id="projects" className="projects-section">
         <h2 className="numbered-heading">Some Things I've Built</h2>
         <Projects limit={2} showOthers={false} />
         <Link to="/projects" className="view-all-link">View All Projects</Link>
+      </section>
+
+      {/* Work Preview - Top 2 */}
+      <section id="work" className="experience-section">
+        <h2 className="numbered-heading">Where I've Worked</h2>
+        <Experience limit={2} />
+        <Link to="/work" className="view-all-link">View Full Work History</Link>
       </section>
 
       {/* Professional Development Preview */}

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { heroData } from '../data/content';
 
 function Hero() {
   const heroRef = useRef(null);
@@ -20,19 +21,17 @@ function Hero() {
   return (
     <section id="hero" className="hero-section" ref={heroRef}>
       <h1 className="intro-greeting fade-in">Hi, my name is</h1>
-      <h2 className="big-heading fade-in">Your Name.</h2>
+      <h2 className="big-heading fade-in">{heroData.name}.</h2>
       <h3 className="big-heading subtitle-heading fade-in">
-        I build things for the web.
+        {heroData.subtitle}
       </h3>
       <p className="hero-description fade-in">
-        I'm a software engineer specializing in building (and occasionally
-        designing) exceptional digital experiences. Currently, I'm focused
-        on building accessible, human-centered products and creating
-        innovative solutions.
+        {heroData.description}
       </p>
-      <a href="#projects" className="cta-button fade-in">Check out my work!</a>
+      <a href="#projects" className="cta-button fade-in">{heroData.ctaText}</a>
     </section>
   );
 }
+
 
 export default Hero;

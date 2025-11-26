@@ -1,61 +1,10 @@
-function Projects({ limit = null, showOthers = true }) {
-  const featuredProjects = [
-    {
-      title: 'Task Management App',
-      description: 'A web application that helps users manage their tasks and boost productivity. Features include drag-and-drop task organization, collaborative workspaces, and real-time synchronization across devices.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-      github: '#',
-      external: '#',
-      image: 'project1'
-    },
-    {
-      title: 'E-Commerce Platform',
-      description: 'An e-commerce platform with modern shopping cart functionality, secure payment processing, and inventory management. Built with scalability and performance in mind.',
-      tech: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
-      github: '#',
-      external: '#',
-      image: 'project2'
-    }
-  ];
+import { projectsData } from '../data/content';
 
-  const otherProjects = [
-    {
-      title: 'Weather Dashboard',
-      description: 'A weather application that displays current conditions and forecasts using OpenWeather API',
-      tech: ['JavaScript', 'API', 'Charts.js'],
-      github: '#'
-    },
-    {
-      title: 'Code Snippet Manager',
-      description: 'A tool for developers to save, organize, and share code snippets with syntax highlighting',
-      tech: ['React', 'Firebase', 'Prism'],
-      github: '#'
-    },
-    {
-      title: 'Portfolio Template',
-      description: 'A clean and modern portfolio template for developers to showcase their work',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      github: '#'
-    },
-    {
-      title: 'Fitness Tracker',
-      description: 'Track workouts, set goals, and monitor progress with this comprehensive fitness application',
-      tech: ['Vue.js', 'Express', 'MongoDB'],
-      github: '#'
-    },
-    {
-      title: 'Recipe Finder',
-      description: 'Discover recipes based on ingredients you have using multiple recipe APIs',
-      tech: ['React', 'API Integration', 'CSS Modules'],
-      github: '#'
-    },
-    {
-      title: 'Chat Application',
-      description: 'Real-time chat application with rooms, direct messaging, and file sharing capabilities',
-      tech: ['Socket.io', 'Node.js', 'Redis'],
-      github: '#'
-    }
-  ];
+function Projects({ limit = null, showOthers = true }) {
+  const featuredProjects = projectsData.featured;
+
+  const otherProjects = projectsData.other;
+
 
   const displayFeatured = limit ? featuredProjects.slice(0, limit) : featuredProjects;
 
