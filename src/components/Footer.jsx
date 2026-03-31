@@ -43,7 +43,7 @@ function Footer() {
         </ul>
       </div>
       <div className="footer-text">
-        <p>Designed & Built by Your Name • {currentYear}</p>
+        <p>Built by Krish Kalathiya • {currentYear}</p>
         <p>Inspired by <a href="https://github.com/bchiang7/v4" target="_blank" rel="noopener noreferrer">Brittany Chiang</a></p>
       </div>
     </footer>

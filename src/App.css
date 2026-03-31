@@ -1438,6 +1438,7 @@ footer {
   color: var(--light-slate);
   font-size: var(--fz-md);
   line-height: 1.6;
+  white-space: pre-line;
 }
 
 /* ========================

@@ -22,7 +22,7 @@ function Home() {
       {/* Work Preview - Top 2 */}
       <section id="work" className="experience-section">
         <h2 className="numbered-heading">Where I've Worked</h2>
-        <Experience limit={2} />
+        <Experience limit={5} />
         <Link to="/work" className="view-all-link">View Full Work History</Link>
       </section>
 

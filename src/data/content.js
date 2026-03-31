@@ -16,7 +16,7 @@ export const aboutData = {
   skills: [
     "Python",
     "C/C++",
-    "MATLAB",
+    "Data Mining & Analysis",
     "Vector CAN Tools",
     "JIRA"
   ],
@@ -108,32 +108,34 @@ export const developmentData = [
   {
     title: "Mantei/Mae Scholar",
     meta: "University of Cincinnati • April 2026",
-    description: "Awarded for commitment to academic excellence and continued growth."
+    description: `Awarded for commitment to academic excellence and continued growth.
+                  \n One of 170 students selected over 14+ years for this prestigious scholarship.`
   },
   {
     title: "Secretary - Executive Board",
     meta: "Association for Computing Machinery @UC • Nov 2025 - Present",
-    description: "Developed robust and verifiable administrative processes to ensure smooth operations for the organisation."
+    description: `Organized engaging events for 400+ attendees, including workshops and speaker nights with industry leaders.
+    \nDeveloped robust and verifiable administrative processes to ensure smooth operations for the organisation.`
   },
   {
     title: "Membership Chair",
     meta: "Association for Computing Machinery @UC • May 2025 - November 2025",
-    description: "Facilitating the provision of crucial networking resources in the form of regular Speaker Nights and Workshops."
+    description: `Facilitating the provision of crucial networking resources in the form of regular Speaker Nights and Workshops.`
   },
   {
     title: "Logistics Organizer",
     meta: "Revolution UC • Sep 2025 - March 2026",
-    description: "Organizing the largest in-person hackathon at UC that embodies principles of innovation and collaboration."
+    description: `Organizing the largest in-person hackathon at UC that embodies principles of innovation and collaboration.`
   },
   {
     title: "Organizer & Web Developer",
     meta: "Revolution UC • Sep 2023 - March 2025",
-    description: "Collaborated to update the hackathon website to Astro framework for better performance. Organizing the largest hackathon at UC for 270+ participants."
+    description: `Collaborated to update the hackathon website to Astro framework for better performance. Organizing the largest hackathon at UC for 270+ participants.`
   },
   {
     title: "Dean's List",
     meta: "University of Cincinnati • Aug 2023 - Present",
-    description: "Recognized for academic excellence."
+    description: `Recognized for academic excellence.`
   }
 ];
 
