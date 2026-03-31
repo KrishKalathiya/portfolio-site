@@ -1,8 +1,8 @@
 
 export const heroData = {
   name: "Krish Kalathiya",
-  subtitle: "I build things for the web.",
-  description: "I'm a Computer Science student at the University of Cincinnati specializing in building exceptional digital experiences. Currently, I'm focused on accessible, human-centered products and innovative solutions.",
+  subtitle: "Building forver.",
+  description: "I'm a Computer Science student at the University of Cincinnati specializing in building exceptional digital experiences. Currently, I'm focused on accessible, human-centered products and innovative solutions with an focus on automotive applications.",
   ctaText: "Check out my work!",
 };
 
@@ -14,22 +14,55 @@ export const aboutData = {
   ],
   skills: [
     "Python",
-    "Java",
-    "C++",
+    "C/C++",
     "MATLAB",
-    "React",
-    "Astro",
     "Vector CAN Tools",
     "JIRA"
   ],
-  image: "path/to/image.jpg" // You can update this path later
+  image: "src/assets/cropped.jpg"
 };
 
 export const experienceData = [
+    {
+    company: "Bendix Commercial Vehicle Systems",
+    url: "https://www.bendix.com/",
+    roles: [
+      {
+        id: "bendix-spring",
+        title: "Hardware-in-the-Loop Co-op",
+        range: "Jan 2026 - May 2026",
+        duties: [
+          "Still working on a lot of fun stuff!"
+        ]
+      },
+      {
+        id: "bendix-summer",
+        title: "ADAS Testing and Verification Co-op",
+        range: "May 2025 - Aug 2025",
+        duties: [
+          "Implemented CARLA for Functional Integration Testing, saving over $90,000 across 7 HIL systems globally.",
+          "Performed data analysis to ensure system safety and alignment with customer specifications.",
+          "Developed an enhanced understanding of development and testing of Adaptive Cruise Control systems"
+        ]
+      },
+      {
+        id: "bendix-fall",
+        title: "Computer Science Co-op",
+        range: "Aug 2024 - Dec 2024",
+        duties: [
+          "Collaborated with teams in Mexico, India, and Germany to support ADAS teams.",
+          "Built a file-matching utility reducing a 15-minute manual process to 15 seconds (60x efficiency increase).",
+          "Upgraded testing mileage tracking from Excel to a robust UI-based solution, eliminating user errors.",
+          "Developed data mining scripts to directly assist in time sensitive and end-user safety critical product development."
+        ]
+      }
+    ]
+  },
   {
-    company: "University of Cincinnati",
+    company: "University of Cincinnati - DECE",
     url: "https://www.uc.edu/",
     roles: [
+      
       {
         id: "uc-ta-2",
         title: "Engineering Design Thinking Peer TA",
@@ -53,37 +86,33 @@ export const experienceData = [
     ]
   },
   {
-    company: "Bendix Commercial Vehicle Systems",
-    url: "https://www.bendix.com/",
+    company: "University of Cincinnati - IT",
+    url: "https://www.uc.edu/",
     roles: [
       {
-        id: "bendix-summer",
-        title: "Computer Science Co-op",
-        range: "May 2025 - Aug 2025",
+        id: "uc-it-1",
+        title: "Engineering Design Thinking Peer TA",
+        range: "Aug 2025 - Dec 2025",
         duties: [
-          "Implemented CARLA for Functional Integration Testing, saving over $90,000 across 7 HIL systems globally.",
-          "Performed data analysis to ensure system safety and alignment with customer specifications."
+          "Assembled Windows 11 PCs for the Department of Environmental and Chemical Engineering.",
+          "Ensured a smooth transition to new hardware for over 60 faculty and staff members.",
         ]
       },
-      {
-        id: "bendix-fall",
-        title: "Computer Science Co-op",
-        range: "Aug 2024 - Dec 2024",
-        duties: [
-          "Collaborated with teams in Mexico, India, and Germany to support ADAS teams.",
-          "Built a file-matching utility reducing a 15-minute manual process to 15 seconds (60x efficiency increase).",
-          "Upgraded testing mileage tracking from Excel to a robust UI-based solution, eliminating user errors."
-        ]
-      }
     ]
-  }
+  },
+
 ];
 
 export const developmentData = [
   {
+    title: "Secretary",
+    meta: "Association for Computing Machinery @UC • Nov 2025 - Present",
+    description: "Developed robust administrative processes to ensure smooth operations for the organisation."
+  },
+  {
     title: "Membership Chair",
-    meta: "Association for Computing Machinery @UC • May 2025 - Present",
-    description: "Facilitating networking resources (Speaker Nights, Workshops) and advocating for early career growth."
+    meta: "Association for Computing Machinery @UC • May 2025 - November 2025",
+    description: "Facilitating the provision of crucial networking resources in the form of regular Speaker Nights and Workshops. Advocating for early career growth in younger students through actively engaging in and promoting healthy use of campus engagement resources."
   },
   {
     title: "Organizer & Web Developer",

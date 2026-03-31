@@ -672,6 +672,12 @@ section {
   height: auto;
 }
 
+.image-placeholder img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* ========================
    Experience Section
    ======================== */

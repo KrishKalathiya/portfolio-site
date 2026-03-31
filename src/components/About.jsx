@@ -1,4 +1,5 @@
 import { aboutData } from '../data/content';
+import croppedImage from '../assets/cropped.jpg';
 
 function About() {
   const { bio, skills } = aboutData;
@@ -22,12 +23,7 @@ function About() {
         <div className="about-image">
           <div className="image-wrapper">
             <div className="image-placeholder">
-              <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="400" fill="#64ffda" opacity="0.2"/>
-                <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fontFamily="Roboto Mono" fontSize="48" fill="#64ffda">
-                  Photo
-                </text>
-              </svg>
+              <img src={croppedImage} alt="Krish Kalathiya" />
             </div>
           </div>
         </div>
