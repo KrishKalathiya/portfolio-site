@@ -563,6 +563,57 @@ section {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
 }
 
+.scroll-indicator {
+  margin-top: 32px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scroll-indicator:hover {
+  color: var(--green);
+}
+
+.scroll-mouse {
+  width: 24px;
+  height: 38px;
+  border: 1px solid var(--green);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.scroll-wheel {
+  width: 3px;
+  height: 8px;
+  border-radius: 999px;
+  background-color: var(--green);
+  animation: scroll-wheel 1.6s var(--easing) infinite;
+}
+
+@keyframes scroll-wheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  60% {
+    opacity: 0.2;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
 /* ========================
    About Section
    ======================== */
@@ -1290,6 +1341,14 @@ footer {
 
   .intro-greeting {
     margin: 0 0 20px 2px;
+  }
+
+  .scroll-indicator {
+    gap: 10px;
+  }
+
+  .scroll-indicator-text {
+    display: none;
   }
 
   .projects-grid {

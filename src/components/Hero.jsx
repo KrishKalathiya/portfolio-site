@@ -29,6 +29,12 @@ function Hero() {
         {heroData.description}
       </p>
       <a href="#projects" className="cta-button fade-in">{heroData.ctaText}</a>
+      <a href="#about" className="scroll-indicator fade-in" aria-label="Scroll to About section">
+        <span className="scroll-indicator-text">Scroll</span>
+        <span className="scroll-mouse" aria-hidden="true">
+          <span className="scroll-wheel" />
+        </span>
+      </a>
     </section>
   );
 }
