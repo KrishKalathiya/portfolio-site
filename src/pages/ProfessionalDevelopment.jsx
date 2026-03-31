@@ -9,10 +9,10 @@ function ProfessionalDevelopment() {
       </section>
 
       <section className="development-section">
-        <h2 className="numbered-heading">Speaking & Presentations</h2>
-        <Development limit={2} />
+        {/* <h2 className="numbered-heading">Speaking & Presentations</h2>
+        <Development limit={2} /> */}
 
-        <h2 className="numbered-heading">Community Involvement</h2>
+        {/* <h2 className="numbered-heading">Community Involvement</h2> */}
         <Development />
       </section>
     </>

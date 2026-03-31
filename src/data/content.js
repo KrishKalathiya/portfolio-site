@@ -1,8 +1,9 @@
 
 export const heroData = {
   name: "Krish Kalathiya",
-  subtitle: "Building forver.",
-  description: "I'm a Computer Science student at the University of Cincinnati specializing in building exceptional digital experiences. Currently, I'm focused on accessible, human-centered products and innovative solutions with an focus on automotive applications.",
+  subtitle: "",
+  description: `I'm a CS student at the University of Cincinnati specializing in building exceptional digital experiences.
+                \nCurrently, I'm interested in accessible, human-centered products and innovative solutions with an focus on automotive applications.`,
   ctaText: "Check out my work!",
 };
 
@@ -105,24 +106,29 @@ export const experienceData = [
 
 export const developmentData = [
   {
-    title: "Secretary",
+    title: "Mantei/Mae Scholar",
+    meta: "University of Cincinnati • April 2026",
+    description: "Awarded for commitment to academic excellence and continued growth."
+  },
+  {
+    title: "Secretary - Executive Board",
     meta: "Association for Computing Machinery @UC • Nov 2025 - Present",
-    description: "Developed robust administrative processes to ensure smooth operations for the organisation."
+    description: "Developed robust and verifiable administrative processes to ensure smooth operations for the organisation."
   },
   {
     title: "Membership Chair",
     meta: "Association for Computing Machinery @UC • May 2025 - November 2025",
-    description: "Facilitating the provision of crucial networking resources in the form of regular Speaker Nights and Workshops. Advocating for early career growth in younger students through actively engaging in and promoting healthy use of campus engagement resources."
+    description: "Facilitating the provision of crucial networking resources in the form of regular Speaker Nights and Workshops."
+  },
+  {
+    title: "Logistics Organizer",
+    meta: "Revolution UC • Sep 2025 - March 2026",
+    description: "Organizing the largest in-person hackathon at UC that embodies principles of innovation and collaboration."
   },
   {
     title: "Organizer & Web Developer",
-    meta: "Revolution UC • Sep 2023 - Present",
+    meta: "Revolution UC • Sep 2023 - March 2025",
     description: "Collaborated to update the hackathon website to Astro framework for better performance. Organizing the largest hackathon at UC for 270+ participants."
-  },
-  {
-    title: "International Outreach Award",
-    meta: "University of Cincinnati • Aug 2023 - Present",
-    description: "Awarded for commitment to international outreach and engagement."
   },
   {
     title: "Dean's List",
@@ -134,29 +140,34 @@ export const developmentData = [
 export const projectsData = {
   featured: [
     {
-      title: "Revolution UC Website",
-      description: "Updated the base front-end framework of the hackathon website to Astro, resulting in quicker load times and better user experience for over 270 participants.",
-      tech: ["Astro", "JavaScript", "HTML/CSS"],
-      github: "https://github.com/KrishKalathiya", // Update if specific repo exists
-      external: "https://revolutionuc.com/", // Assuming this is the site
-      image: "revolutionuc"
+      title: "Gravitas | The Ultimate Research Assistant",
+      description: `Gravitas reimagines how scientists explore knowledge. 
+      \nBuilt as a Retrieval-Augmented Generation (RAG)–based search engine, Gravitas transforms dense NASA scientific literature into a dynamic, interactive knowledge graph - turning research from data retrieval into true knowledge discovery.
+      \nDeveloped as a part of NASA Space Apps Challenge 2025 (Won Most Inspirational Project award at the Local Level).`,
+      tech: ["RAG", "Mass Data Analysis", "Knowledge Graphs", "LLMs"],
+      github: "https://github.com/kee5625/gravitas.", 
+      external: "https://gravitas-4hgt.vercel.app",
+      image: "assets/gravitas.jpg"
     },
     {
-      title: "File-Matching Utility",
-      description: "Automated an intensive manual process for Bendix, reducing processing time from 15 minutes to 15 seconds.",
-      tech: ["Python", "UI Automation"], // Guessed tech stack based on description
-      github: "#", // Internal project, likely no link
-      external: "#",
-      image: "utility"
+      title: "Quartz",
+      description: `The all-in-one extension that sanitizes your data and enhances your prompts for safer and more effective AI conversations. 
+      \nQuartz has two powerful features: Security & Efficiency. Get better AI results instantly.
+      \nDeveloped as a part of MakeUC 2025 (Won Best Security Hack)`,
+      tech: ["Groq-API", "Cloudflare Workers","Web Extension"], 
+      github: "https://github.com/kee5625/Quartz", 
+      external: "https://devpost.com/software/quartz-64fbd3",
+      image: "assets/quartz.png"
     }
   ],
   other: [
     {
-      title: "Mileage Tracking UI",
-      description: "Robust UI-based solution to replace Excel tracking for testing mileage.",
-      tech: ["UI Framework", "Database"],
-      github: "#"
+      title: "Eureka!",
+      description: `Eureka is the AI pre-flight check that kills scope creep and turns raw ideas into a validated engineering blueprint so you can actually ship.`,
+      tech: ["Tailwind", "ArizeAI","Lllama AI Personas"],
+      github: "https://github.com/SamarthEdlabadkar/Eureka",
+      external: "https://devpost.com/software/eureka-8x4vq2"
     }
-    // Add more projects here
+
   ]
 };

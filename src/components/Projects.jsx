@@ -1,4 +1,11 @@
 import { projectsData } from '../data/content';
+import gravitasImage from '../assets/gravitas.jpg';
+import quartzImage from '../assets/quartz.png';
+
+const featuredProjectImageMap = {
+  'assets/gravitas.jpg': gravitasImage,
+  'assets/quartz.png': quartzImage, 
+};
 
 function Projects({ limit = null, showOthers = true }) {
   const featuredProjects = projectsData.featured;
@@ -34,7 +41,10 @@ function Projects({ limit = null, showOthers = true }) {
     <>
       {/* Featured Projects */}
       <div className="featured-projects-container">
-        {displayFeatured.map((project, index) => (
+        {displayFeatured.map((project, index) => {
+          const projectImage = featuredProjectImageMap[project.image];
+
+          return (
           <div key={index} className={`featured-project ${index % 2 === 1 ? 'reverse' : ''}`}>
             <div className="project-content">
               <div>
@@ -65,17 +75,22 @@ function Projects({ limit = null, showOthers = true }) {
             <div className="project-image">
               <a href={project.external} target="_blank" rel="noopener noreferrer">
                 <div className="image-placeholder">
-                  <svg viewBox="0 0 700 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="700" height="400" fill="#64ffda" opacity="0.1"/>
-                    <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fontFamily="Roboto Mono" fontSize="24" fill="#64ffda">
-                      Project Screenshot
-                    </text>
-                  </svg>
+                  {projectImage ? (
+                    <img src={projectImage} alt={`${project.title} screenshot`} />
+                  ) : (
+                    <svg viewBox="0 0 700 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="700" height="400" fill="#64ffda" opacity="0.1"/>
+                      <text x="50%" y="50%" textAnchor="middle" dominantBaseline="middle" fontFamily="Roboto Mono" fontSize="24" fill="#64ffda">
+                        Project Screenshot
+                      </text>
+                    </svg>
+                  )}
                 </div>
               </a>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* Other Projects Grid */}

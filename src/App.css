@@ -540,6 +540,7 @@ section {
 .hero-description {
   margin: 20px 0 0;
   max-width: 540px;
+  white-space: pre-line;
 }
 
 .cta-button {
@@ -910,6 +911,11 @@ section {
   transition: var(--transition);
 }
 
+.project-description p {
+  margin: 0;
+  white-space: pre-line;
+}
+
 .project-description:hover {
   box-shadow: 0 20px 30px -15px var(--navy-shadow);
 }
@@ -1079,6 +1085,7 @@ section {
   color: var(--light-slate);
   font-size: 17px;
   flex-grow: 1;
+  white-space: pre-line;
 }
 
 .project-card-tech {
