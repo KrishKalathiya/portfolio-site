@@ -2,8 +2,8 @@
 export const heroData = {
   name: "Krish Kalathiya",
   subtitle: "",
-  description: `I'm a CS student at the University of Cincinnati specializing in building exceptional digital experiences.
-                \nCurrently, I'm interested in accessible, human-centered products and innovative solutions with an focus on automotive applications.`,
+  description: `I'm a CS student at the University of Cincinnati specializing in automotive software development.
+                \nCurrently, I'm interested in Autonomous Driving, ADAS and Hardware-in-the-Loop testing.`,
   ctaText: "Check out my work!",
 };
 
